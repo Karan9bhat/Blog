@@ -7,11 +7,9 @@
     
     <h1><%= post.title %></h1>
     <p><%= post.content %>
-    <a href="/posts/<%= post._id %>">Read More</a>
+    <!-- <a href="/posts/<%= post._id %>">Read More</a>.substring(0, 100) + "..." -->
     </p>
 
 <% }); %>
 
 <%- include("partials/footer") -%>
-
-<!-- .substring(0, 100) + "..." -->
