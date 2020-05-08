@@ -193,16 +193,16 @@ app.post("/compose", function(req, res) {
   //   });
 });
 
-app.get("/posts/:postId", function(req, res) {
-  const requestedPostId = _.lowerCase(req.params.postId);
+// app.get("/posts/:postId", function(req, res) {
+//   const requestedPostId = _.lowerCase(req.params.postId);
   
-  Post.findOne({_id: requestedPostId}, function(err, post) {
-    res.render("post", {
-      title: post.title,
-      content: post.content
-    });
-  });
-});
+//   Post.findOne({_id: requestedPostId}, function(err, post) {
+//     res.render("post", {
+//       title: post.title,
+//       content: post.content
+//     });
+//   });
+// });
 
 app.get("/blog", function(req, res) {
   res.render("blog");
